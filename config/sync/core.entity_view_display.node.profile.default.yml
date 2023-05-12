@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.profile.field_plain_address
     - field.field.node.profile.field_plain_birthdate
     - field.field.node.profile.field_plain_cost
+    - field.field.node.profile.field_plain_ip
     - field.field.node.profile.field_plain_phone
     - field.field.node.profile.field_plain_twitter
     - field.field.node.profile.layout_builder__layout
@@ -205,6 +206,22 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 12
             additional: {  }
+          e3a75a72-3fb1-4d5a-8084-f5c554eebdbc:
+            uuid: e3a75a72-3fb1-4d5a-8084-f5c554eebdbc
+            region: content
+            configuration:
+              id: 'field_block:node:profile:field_plain_ip'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 13
+            additional: {  }
         third_party_settings: {  }
 id: node.profile.default
 targetEntityType: node
@@ -281,6 +298,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 13
+    region: content
+  field_plain_ip:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 14
     region: content
   field_plain_phone:
     type: string

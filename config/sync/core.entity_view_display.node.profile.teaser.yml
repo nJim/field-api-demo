@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.profile.field_plain_address
     - field.field.node.profile.field_plain_birthdate
     - field.field.node.profile.field_plain_cost
+    - field.field.node.profile.field_plain_ip
     - field.field.node.profile.field_plain_phone
     - field.field.node.profile.field_plain_twitter
     - field.field.node.profile.layout_builder__layout
@@ -39,6 +40,7 @@ hidden:
   field_plain_address: true
   field_plain_birthdate: true
   field_plain_cost: true
+  field_plain_ip: true
   field_plain_phone: true
   field_plain_twitter: true
   layout_builder__layout: true

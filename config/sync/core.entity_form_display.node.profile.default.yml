@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.profile.field_plain_address
     - field.field.node.profile.field_plain_birthdate
     - field.field.node.profile.field_plain_cost
+    - field.field.node.profile.field_plain_ip
     - field.field.node.profile.field_plain_phone
     - field.field.node.profile.field_plain_twitter
     - field.field.node.profile.layout_builder__layout
@@ -46,6 +47,7 @@ third_party_settings:
         - field_plain_phone
         - field_plain_birthdate
         - field_plain_cost
+        - field_plain_ip
         - field_plain_twitter
         - field_plain_address
       label: 'Anarchy varchar'
@@ -115,7 +117,7 @@ content:
     third_party_settings: {  }
   field_plain_address:
     type: string_textarea
-    weight: 9
+    weight: 10
     region: content
     settings:
       rows: 5
@@ -137,6 +139,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_plain_ip:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_plain_phone:
     type: string_textfield
     weight: 5
@@ -147,7 +157,7 @@ content:
     third_party_settings: {  }
   field_plain_twitter:
     type: string_textfield
-    weight: 8
+    weight: 9
     region: content
     settings:
       size: 60

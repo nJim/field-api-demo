@@ -1,0 +1,19 @@
+uuid: 40e5d803-2efb-4bab-8976-b8d1cd6daf3a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plain_ip
+    - node.type.profile
+id: node.profile.field_plain_ip
+field_name: field_plain_ip
+entity_type: node
+bundle: profile
+label: 'IP Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
