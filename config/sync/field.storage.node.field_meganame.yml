@@ -1,0 +1,19 @@
+uuid: e90990d4-334d-4eea-8067-7be15a475a6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - funfields
+    - node
+id: node.field_meganame
+field_name: field_meganame
+entity_type: node
+type: meganame
+settings: {  }
+module: funfields
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

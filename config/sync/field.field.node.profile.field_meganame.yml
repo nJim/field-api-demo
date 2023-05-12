@@ -1,21 +1,21 @@
-uuid: 4eff9825-cb41-48c4-b247-c06ff67218cf
+uuid: 23a74851-f66b-48f3-825b-c597dacbd25c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.layout_builder__layout
+    - field.storage.node.field_meganame
     - node.type.profile
   module:
-    - layout_builder
-id: node.profile.layout_builder__layout
-field_name: layout_builder__layout
+    - funfields
+id: node.profile.field_meganame
+field_name: field_meganame
 entity_type: node
 bundle: profile
-label: Layout
+label: MegaName
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: layout_section
+field_type: meganame

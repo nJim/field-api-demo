@@ -40,6 +40,11 @@ class MegaNameFieldType extends FieldItemBase {
           'size' => 'tiny',
           'not null' => FALSE,
         ],
+        'prefix_other' => [
+          'type' => 'text',
+          'size' => 'tiny',
+          'not null' => FALSE,
+        ],
         'first' => [
           'type' => 'text',
           'size' => 'normal',
@@ -82,6 +87,9 @@ class MegaNameFieldType extends FieldItemBase {
     $properties['prefix'] = DataDefinition::create('string')
       ->setLabel(t('Prefix'))
       ->setDescription(t('A professional title or salutation.'));
+      $properties['prefix'] = DataDefinition::create('string')
+      ->setLabel(t('Other Prefix'))
+      ->setDescription(t('A prefix not on the currated list.'));
     $properties['first'] = DataDefinition::create('string')
       ->setLabel(t('First Name'))
       ->setDescription(t('A first name or given name.'));

@@ -1,1 +1,19 @@
 <?php
+
+/**
+ * Implements hook_theme().
+ */
+function funfields_theme($existing, $type, $theme, $path) {
+  return [
+    'meganame' => [
+      'variables' => [
+        'prefix_name' => NULL,
+        'first' => NULL,
+        'middle' => NULL,
+        'last' => NULL,
+        'suffix_name' => NULL,
+        'nickname' => NULL,
+      ],
+    ],
+  ];
+}
