@@ -3,12 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.article.field_image
-    - field.field.node.article.field_tags
-    - image.style.thumbnail
+    - field.field.node.article.field_link
     - node.type.article
   module:
-    - image
+    - link
     - path
 _core:
   default_config_hash: ewbd6G2uX456-bgwseM2Q-KQG3RkASoyHmTh-XR3oLU
@@ -17,53 +15,23 @@ targetEntityType: node
 bundle: article
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_image:
-    type: image_image
+  field_link:
+    type: link_default
     weight: 1
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-  field_tags:
-    type: entity_reference_autocomplete_tags
-    weight: 3
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    weight: 15
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 120
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    weight: 16
+    weight: 3
     region: content
     settings:
       display_label: true
@@ -76,14 +44,8 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

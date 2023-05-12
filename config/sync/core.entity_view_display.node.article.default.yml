@@ -3,12 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.article.field_image
-    - field.field.node.article.field_tags
-    - image.style.wide
+    - field.field.node.article.field_link
     - node.type.article
   module:
-    - image
+    - funfields
     - user
 _core:
   default_config_hash: 7fb0j9HnIXfP9ndewzgPPzzeX_SV532wuYpkscrCMCk
@@ -17,28 +15,12 @@ targetEntityType: node
 bundle: article
 mode: default
 content:
-  field_image:
-    type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: wide
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: -1
-    region: content
-  field_tags:
-    type: entity_reference_label
+  field_link:
+    type: qr_formatter
     label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 10
-    region: content
-  links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
-hidden: {  }
+hidden:
+  links: true

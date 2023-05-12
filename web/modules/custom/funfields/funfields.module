@@ -15,5 +15,12 @@ function funfields_theme($existing, $type, $theme, $path) {
         'nickname' => NULL,
       ],
     ],
+    'color_components' => [
+      'variables' => [
+        'red' => NULL,
+        'green' => NULL,
+        'blue' => NULL,
+      ],
+    ],
   ];
 }

@@ -1,0 +1,21 @@
+uuid: 9a88d697-c6e5-4b67-adae-1c281d0f807f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_picker_color_widget
+    - node.type.page
+  module:
+    - funfields
+id: node.page.field_picker_color_widget
+field_name: field_picker_color_widget
+entity_type: node
+bundle: page
+label: 'Picker Color Widget'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: rgb

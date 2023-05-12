@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.field_default_color_widget
+    - field.field.node.page.field_picker_color_widget
     - field.field.node.page.field_random_color_widget
     - node.type.page
   module:
@@ -33,6 +34,21 @@ third_party_settings:
       label: 'Color Widget - Random'
       region: content
       parent_name: ''
+      weight: 3
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: false
+    group_color_widget_picker:
+      children:
+        - field_picker_color_widget
+      label: 'Color Widget - Picker'
+      region: content
+      parent_name: ''
       weight: 2
       format_type: details
       format_settings:
@@ -52,6 +68,12 @@ content:
   field_default_color_widget:
     type: rgb_default_widget
     weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_picker_color_widget:
+    type: rgb_picker_widget
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }

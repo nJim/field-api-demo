@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.field_default_color_widget
+    - field.field.node.page.field_picker_color_widget
     - field.field.node.page.field_random_color_widget
     - node.type.page
   module:
@@ -22,6 +23,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_picker_color_widget:
+    type: rgb_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
     region: content
   field_random_color_widget:
     type: rgb_formatter

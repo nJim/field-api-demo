@@ -13,6 +13,7 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
   editor: 0
   field: 0
   field_group: 0
