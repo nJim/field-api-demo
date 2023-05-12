@@ -19,7 +19,6 @@ dependencies:
     - field.field.node.profile.field_plain_ip
     - field.field.node.profile.field_plain_phone
     - field.field.node.profile.field_plain_twitter
-    - field.field.node.profile.field_rgb_color
     - node.type.profile
   module:
     - address
@@ -228,12 +227,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_rgb_color:
-    type: rgb_widget
-    weight: 26
-    region: content
-    settings: {  }
     third_party_settings: {  }
   path:
     type: path

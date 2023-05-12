@@ -1,0 +1,19 @@
+uuid: f2bca485-9509-4d16-97f1-5881f2741f94
+langcode: en
+status: true
+dependencies:
+  module:
+    - funfields
+    - node
+id: node.field_default_color_widget
+field_name: field_default_color_widget
+entity_type: node
+type: rgb
+settings: {  }
+module: funfields
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

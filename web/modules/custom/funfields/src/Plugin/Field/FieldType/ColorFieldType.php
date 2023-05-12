@@ -20,7 +20,7 @@ use Drupal\Core\TypedData\DataDefinition;
  *   id = "rgb",
  *   label = @Translation("RGB Color Field"),
  *   default_formatter = "rgb_formatter",
- *   default_widget = "rgb_widget",
+ *   default_widget = "rgb_default_widget",
  * )
  */
 class ColorFieldType extends FieldItemBase {

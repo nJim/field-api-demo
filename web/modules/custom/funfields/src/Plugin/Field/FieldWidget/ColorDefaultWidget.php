@@ -7,17 +7,17 @@ use Drupal\Core\Field\WidgetBase;
 use Drupal\Core\Form\FormStateInterface;
 
 /**
- * Provides a widget for the RGB Color field.
+ * Provides a default widget for the RGB Color field.
  *
  * @FieldWidget(
- *   id = "rgb_widget",
- *   label = @Translation("RGB Color widget"),
+ *   id = "rgb_default_widget",
+ *   label = @Translation("RGB Value Fields"),
  *   field_types = {
  *     "rgb"
  *   }
  * )
  */
-class ColorWidget extends WidgetBase {
+class ColorDefaultWidget extends WidgetBase {
 
   /**
    * {@inheritdoc}
@@ -28,7 +28,7 @@ class ColorWidget extends WidgetBase {
     $item = $items[$delta];
 
     // Attach the colorpicker library.
-    $element['#attached']['library'][] = 'funfields/color-picker';
+    $element['#attached']['library'][] = 'funfields/color-default';
 
     // Field widgets can take many different forms. Like the example below, they
     // can be simple implementations with the Drupals Forms API; or they can be
@@ -58,20 +58,6 @@ class ColorWidget extends WidgetBase {
       '#max' => 255,
       '#default_value' => $items[$delta]->blue ?? NULL,
     ];
-    $element['picker'] = [
-      '#markup' => '<div id="grid"><div id="grid-wrapper"></div></div>',
-    ];
-    // $element['picker'] = [
-    //   '#type' => 'color',
-    // ];
-    //https://codepen.io/naruthk/pen/LzMwWJ
-    // $element['picker'] = [
-    //   '#type' => 'value',
-    //   '#value' => '#FFFFFF',
-    //   '#attributes' => [
-    //     'data-jscolor' => 'sadasd'
-    //   ]
-    // ];
     return $element;
   }
 

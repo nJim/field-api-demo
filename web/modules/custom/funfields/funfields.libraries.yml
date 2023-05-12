@@ -2,11 +2,15 @@ global:
   css:
     theme:
       css/global.css: {}
+color-default:
+  css:
+    theme:
+      css/color-default.css: {}
 color-picker:
   css:
     theme:
-      css/jscolor.css: {}
+      css/color-picker.css: {}
   js:
-    js/jscolor.js: {}
+    js/color-picker.js: {}
   dependencies:
     - core/once

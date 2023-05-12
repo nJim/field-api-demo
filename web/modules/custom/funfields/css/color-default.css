@@ -1,0 +1,6 @@
+/* Styles for the default RGB color widget. */
+.field--name-field-default-color-widget .form-item {
+  max-width: 116px;
+  display: inline-block;
+  padding-right: 20px;
+}

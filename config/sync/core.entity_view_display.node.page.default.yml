@@ -3,8 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_default_color_widget
+    - field.field.node.page.field_random_color_widget
     - node.type.page
   module:
+    - funfields
     - user
 _core:
   default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
@@ -13,6 +16,20 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  field_default_color_widget:
+    type: rgb_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_random_color_widget:
+    type: rgb_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
   links:
     weight: 101
     region: content

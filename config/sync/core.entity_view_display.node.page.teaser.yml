@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.page.field_default_color_widget
+    - field.field.node.page.field_random_color_widget
     - node.type.page
   module:
     - user
@@ -17,4 +19,6 @@ content:
   links:
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  field_default_color_widget: true
+  field_random_color_widget: true

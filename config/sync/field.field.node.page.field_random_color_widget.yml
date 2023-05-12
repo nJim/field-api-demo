@@ -1,0 +1,21 @@
+uuid: 43f235e9-140d-41cb-86ab-8acdf916df4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_random_color_widget
+    - node.type.page
+  module:
+    - funfields
+id: node.page.field_random_color_widget
+field_name: field_random_color_widget
+entity_type: node
+bundle: page
+label: 'Random Color Widget'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: rgb

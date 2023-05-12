@@ -1,12 +1,12 @@
-uuid: 227cc53c-f165-49c1-ae97-0ebf5e8cfd9a
+uuid: 74215577-4f1e-4640-a98b-e8c71c0762b4
 langcode: en
 status: true
 dependencies:
   module:
     - funfields
     - node
-id: node.field_rgb_color
-field_name: field_rgb_color
+id: node.field_random_color_widget
+field_name: field_random_color_widget
 entity_type: node
 type: rgb
 settings: {  }

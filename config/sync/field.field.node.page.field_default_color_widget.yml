@@ -1,0 +1,21 @@
+uuid: a547b2e7-bb3a-46f0-ab16-736fbfe4656f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_default_color_widget
+    - node.type.page
+  module:
+    - funfields
+id: node.page.field_default_color_widget
+field_name: field_default_color_widget
+entity_type: node
+bundle: page
+label: 'Default Color Widget'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: rgb

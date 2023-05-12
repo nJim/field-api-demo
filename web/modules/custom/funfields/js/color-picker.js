@@ -4,6 +4,9 @@
 Drupal.behaviors.colorPicker = {
 	attach: function (context, settings) {
 		once('color-picker', '#grid-wrapper', context).forEach(el => {
+      let inputRed = document.getElementById('random-picker-red');
+      let inputGreen = document.getElementById('random-picker-green');
+      let inputBlue = document.getElementById('random-picker-blue');
       let numberColRow = 5;
       createGrid(numberColRow);
       function createGrid(amount) {
@@ -31,10 +34,11 @@ Drupal.behaviors.colorPicker = {
         }
         this.addEventListener("copy", function(event) {
           event.preventDefault();
-          if (event.clipboardData) {
-            event.clipboardData.setData("text/plain", this.textContent);
-            alert(randomRGB + " copied to clipboard!")
-          }
+          const regexp = /rgb\((?<red>[0-9]+), (?<green>[0-9]+), (?<blue>[0-9]+)\)/i;
+          let parsed = this.textContent.match(regexp);
+          inputRed.value = parsed.groups.red;
+          inputGreen.value = parsed.groups.green;
+          inputBlue.value = parsed.groups.blue;
         });
         this.onmouseout = removeSettings;
       }
