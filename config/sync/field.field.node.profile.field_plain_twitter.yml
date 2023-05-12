@@ -1,0 +1,19 @@
+uuid: e1541b3d-ce56-4d46-9fa1-1eb3660a3c1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plain_twitter
+    - node.type.profile
+id: node.profile.field_plain_twitter
+field_name: field_plain_twitter
+entity_type: node
+bundle: profile
+label: Twitter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

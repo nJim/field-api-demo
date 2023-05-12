@@ -1,0 +1,19 @@
+uuid: be883838-1b62-46c2-a2a9-4c09b34539ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name_preferred
+    - node.type.profile
+id: node.profile.field_name_preferred
+field_name: field_name_preferred
+entity_type: node
+bundle: profile
+label: 'Preferred Name / Nickname'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

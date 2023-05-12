@@ -1,0 +1,19 @@
+uuid: 67d6f512-d04e-42ba-bdf0-ee62798e83f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name_suffix
+    - node.type.profile
+id: node.profile.field_name_suffix
+field_name: field_name_suffix
+entity_type: node
+bundle: profile
+label: Suffix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

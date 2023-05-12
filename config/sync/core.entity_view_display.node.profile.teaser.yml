@@ -1,0 +1,44 @@
+uuid: 98f81276-a2bc-436b-af36-cabb735b1234
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.profile.field_name_additional
+    - field.field.node.profile.field_name_family
+    - field.field.node.profile.field_name_given
+    - field.field.node.profile.field_name_preferred
+    - field.field.node.profile.field_name_prefix
+    - field.field.node.profile.field_name_suffix
+    - field.field.node.profile.field_plain_address
+    - field.field.node.profile.field_plain_birthdate
+    - field.field.node.profile.field_plain_cost
+    - field.field.node.profile.field_plain_phone
+    - field.field.node.profile.field_plain_twitter
+    - field.field.node.profile.layout_builder__layout
+    - node.type.profile
+  module:
+    - user
+id: node.profile.teaser
+targetEntityType: node
+bundle: profile
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_name_additional: true
+  field_name_family: true
+  field_name_given: true
+  field_name_preferred: true
+  field_name_prefix: true
+  field_name_suffix: true
+  field_plain_address: true
+  field_plain_birthdate: true
+  field_plain_cost: true
+  field_plain_phone: true
+  field_plain_twitter: true
+  layout_builder__layout: true

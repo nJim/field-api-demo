@@ -1,0 +1,4 @@
+name: field-api-demo
+recipe: drupal10
+config:
+  webroot: web

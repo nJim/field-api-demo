@@ -1,0 +1,19 @@
+uuid: eb2cf295-2a80-46b6-978d-c10767d658c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_plain_address
+field_name: field_plain_address
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
