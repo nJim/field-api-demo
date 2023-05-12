@@ -27,13 +27,14 @@ class ColorPickerWidget extends WidgetBase {
     /** @var \Drupal\link\LinkItemInterface $item */
     $item = $items[$delta];
 
+    // Load the default values for this field.
     $red = $items[$delta]->red ?? '00';
     $green = $items[$delta]->green ?? '00';
     $blue = $items[$delta]->blue ?? '00';
 
     $element['picker'] = [
       '#type' => 'color',
-      '#default_value' => sprintf("#%02x%02x%02x", $red, $green, $blue),
+      '#default_value' => $this->rgb2hex($red, $green, $blue),
     ];
 
     return $element;
@@ -47,14 +48,45 @@ class ColorPickerWidget extends WidgetBase {
     foreach ($values as &$item) {
       // The widget form uses the native 'color' element which stores colors as
       // the hex value. We need to get this into an RGB form for storage.
-      $color = $item['picker'];
-      $hex = ltrim($color, '#');
-      $length   = strlen($hex);
-      $item['red'] = hexdec($length == 6 ? substr($hex, 0, 2) : ($length == 3 ? str_repeat(substr($hex, 0, 1), 2) : 0));
-      $item['green'] = hexdec($length == 6 ? substr($hex, 2, 2) : ($length == 3 ? str_repeat(substr($hex, 1, 1), 2) : 0));
-      $item['blue']= hexdec($length == 6 ? substr($hex, 4, 2) : ($length == 3 ? str_repeat(substr($hex, 2, 1), 2) : 0));
+      $color = $this->hex2rgb($item['picker']);
+      $item['red'] = $color['red'];
+      $item['green'] = $color['green'];
+      $item['blue']= $color['blue'];
     }
     return $values;
+  }
+
+  /**
+   * Convert rgb to hex.
+   *
+   * @param integer $red
+   *   An integer value from 0 to 255 for the red channel.
+   * @param integer $green
+   *   An integer value from 0 to 255 for the green channel.
+   * @param integer $blue
+   *   An integer value from 0 to 255 for the blue channel.
+   * @return string
+   *   A hex color with the preceding hash sign.
+   */
+  protected function rgb2hex(int $red, int $green, int $blue): string {
+    return sprintf("#%02x%02x%02x", $red, $green, $blue);
+  }
+
+  /**
+   * Convert hex to rgb component values in an array.
+   *
+   * @param string $hex
+   *   A hexidecimal color with a preceding hash sign.
+   * @return array
+   *   An array of component colors in RBG channels.
+   */
+  protected function hex2rgb(string $hex): array {
+    $color = ltrim($hex, '#');
+    return [
+      'red' => hexdec(substr($color, 0, 2)),
+      'green' => hexdec(substr($color, 2, 2)),
+      'blue' => hexdec(substr($color, 4, 2)),
+    ];
   }
 
 }
