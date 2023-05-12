@@ -3,6 +3,9 @@ global:
     theme:
       css/global.css: {}
 color-picker:
+  css:
+    theme:
+      css/jscolor.css: {}
   js:
     js/jscolor.js: {}
   dependencies:
