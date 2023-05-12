@@ -2,3 +2,8 @@ global:
   css:
     theme:
       css/global.css: {}
+color-picker:
+  js:
+    js/jscolor.js: {}
+  dependencies:
+    - core/once

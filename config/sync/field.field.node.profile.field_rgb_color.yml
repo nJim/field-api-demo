@@ -1,0 +1,21 @@
+uuid: 59983bcf-472b-4f0f-b5ca-3a2374bff65a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rgb_color
+    - node.type.profile
+  module:
+    - funfields
+id: node.profile.field_rgb_color
+field_name: field_rgb_color
+entity_type: node
+bundle: profile
+label: 'RGB Color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: rgb

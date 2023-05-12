@@ -19,10 +19,12 @@ dependencies:
     - field.field.node.profile.field_plain_ip
     - field.field.node.profile.field_plain_phone
     - field.field.node.profile.field_plain_twitter
+    - field.field.node.profile.field_rgb_color
     - node.type.profile
   module:
     - address
     - datetime
+    - funfields
     - layout_builder
     - phone_number
     - text
@@ -161,6 +163,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 11
+    region: content
+  field_rgb_color:
+    type: rgb_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
     region: content
 hidden:
   layout_builder__layout: true
