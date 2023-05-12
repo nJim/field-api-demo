@@ -58,9 +58,7 @@ class ColorRandomWidget extends WidgetBase {
         'id' => 'random-picker-blue'
       ],
     ];
-    // $element['picker'] = [
-    //   '#type' => 'color',
-    // ];
+
     return $element;
   }
 
