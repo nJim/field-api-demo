@@ -1,0 +1,21 @@
+uuid: 516bb572-7f48-44d3-b703-7b28ad9f4955
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_better_birthdate
+    - node.type.profile
+  module:
+    - datetime
+id: node.profile.field_better_birthdate
+field_name: field_better_birthdate
+entity_type: node
+bundle: profile
+label: Birthdate
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

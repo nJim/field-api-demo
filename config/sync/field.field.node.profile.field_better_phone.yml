@@ -1,0 +1,24 @@
+uuid: 6032a942-2476-4a8d-a184-bfbcfd163a20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_better_phone
+    - node.type.profile
+  module:
+    - phone_number
+id: node.profile.field_better_phone
+field_name: field_better_phone
+entity_type: node
+bundle: profile
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_countries: {  }
+  allowed_types: {  }
+  extension_field: true
+field_type: phone_number

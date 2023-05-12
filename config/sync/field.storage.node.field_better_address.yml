@@ -1,0 +1,19 @@
+uuid: dd98cd0e-b0cf-4935-a507-59034cdae78d
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - node
+id: node.field_better_address
+field_name: field_better_address
+entity_type: node
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

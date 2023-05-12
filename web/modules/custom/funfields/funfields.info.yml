@@ -1,0 +1,5 @@
+name: Fun Field Examples
+description: Demo fields, widgets, formatters for my conference talk.
+package: nJim
+type: module
+core_version_requirement: ^9.4 || ^10

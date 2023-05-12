@@ -4,6 +4,9 @@ status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.profile.field_better_address
+    - field.field.node.profile.field_better_birthdate
+    - field.field.node.profile.field_better_phone
     - field.field.node.profile.field_name_additional
     - field.field.node.profile.field_name_family
     - field.field.node.profile.field_name_given
@@ -31,6 +34,9 @@ content:
     weight: 100
     region: content
 hidden:
+  field_better_address: true
+  field_better_birthdate: true
+  field_better_phone: true
   field_name_additional: true
   field_name_family: true
   field_name_given: true

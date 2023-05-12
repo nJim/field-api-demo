@@ -1,0 +1,20 @@
+uuid: 4552a906-4915-4332-92d7-96f7f4305a4e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - phone_number
+id: node.field_better_phone
+field_name: field_better_phone
+entity_type: node
+type: phone_number
+settings:
+  unique: 0
+module: phone_number
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

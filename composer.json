@@ -25,6 +25,7 @@
         "drupal/gin": "^3.0@RC",
         "drupal/gin_lb": "^1.0@RC",
         "drupal/gin_toolbar": "^1.0@RC",
+        "drupal/phone_number": "^2.0@alpha",
         "drush/drush": "^11.5"
     },
     "conflict": {

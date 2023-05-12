@@ -12,3 +12,11 @@
 .claro-details {
   background-color: #F8F5EC !important;
 }
+
+/* Override phone number field styles */
+.phone-number-field .local-number,
+.phone-number-field .extension {
+  border-width: 1px;
+  border-bottom: 1px solid #726640;
+  max-width: 300px;
+}
