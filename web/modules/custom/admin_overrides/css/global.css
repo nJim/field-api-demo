@@ -1,0 +1,14 @@
+:root {
+  --gin-bg-layer: #F8F5EC !important;
+  --gin-border-color: #726640 !important;
+  --gin-border-color-layer: #726640 !important;
+  --gin-bg-input: #fcf9f2 !important;
+}
+
+[data-gin-accent] {
+  --gin-bg-app: #fcf9f2 !important;
+}
+
+.claro-details {
+  background-color: #F8F5EC !important;
+}

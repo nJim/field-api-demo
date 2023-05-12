@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_page_attachments().
+ */
+function admin_overrides_page_attachments(array &$attachments) {
+  $theme = \Drupal::theme()->getActiveTheme()->getName();
+  if ($theme == 'gin') {
+    $attachments['#attached']['library'][] = 'admin_overrides/global';
+  }
+}
